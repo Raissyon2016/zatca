@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "List Filter",
+  "filter_name": "Cleared/Reported",
+  "filters": "[[\"Sales Invoice\",\"zatca_status\",\"in\",[\"Cleared\",\"Cleared with warnings\",\"Reported\",\"Reported with warnings\"],false]]",
+  "for_user": "",
+  "modified": "2023-10-16 16:56:39.207713",
+  "name": "bebf6e9a5c",
+  "reference_doctype": "Sales Invoice"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "List Filter",
+  "filter_name": "Simple Invoices",
+  "filters": "[[\"Sales Invoice\",\"simple\",\"=\",1,false]]",
+  "for_user": "",
+  "modified": "2023-10-16 17:34:25.523253",
+  "name": "4c079ac1c0",
+  "reference_doctype": "Sales Invoice"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "List Filter",
+  "filter_name": "Standard Invoices",
+  "filters": "[[\"Sales Invoice\",\"simple\",\"=\",0,false]]",
+  "for_user": "",
+  "modified": "2023-10-16 17:34:44.165314",
+  "name": "a09a025177",
+  "reference_doctype": "Sales Invoice"
+ }
+]

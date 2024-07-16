@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-20 10:08:48.420751",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "zatca_client",
+  "type",
+  "status",
+  "column_break_thhtk",
+  "posting_time",
+  "reason",
+  "section_break_aahth",
+  "xml"
+ ],
+ "fields": [
+  {
+   "fieldname": "zatca_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "zatca Client",
+   "options": "Zatca Auth",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Clear Invoice\nReport Invoice",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "status",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_thhtk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_time",
+   "fieldtype": "Datetime",
+   "label": "Posting time",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_aahth",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "xml",
+   "fieldtype": "Long Text",
+   "label": "XML",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.status==\"NOT_REPORTED\" || doc.status==\"NOT_CLEARED\");",
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-20 14:06:45.675399",
+ "modified_by": "Administrator",
+ "module": "Zatca",
+ "name": "Zatca Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "CLEARED"
+  },
+  {
+   "color": "Green",
+   "title": "REPORTED"
+  },
+  {
+   "color": "Red",
+   "title": "NOT_CLEARED"
+  },
+  {
+   "color": "Red",
+   "title": "NOT_REPORTED"
+  }
+ ]
+}

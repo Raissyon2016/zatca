@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include zatca *.css
+recursive-include zatca *.csv
+recursive-include zatca *.html
+recursive-include zatca *.ico
+recursive-include zatca *.js
+recursive-include zatca *.json
+recursive-include zatca *.md
+recursive-include zatca *.png
+recursive-include zatca *.py
+recursive-include zatca *.svg
+recursive-include zatca *.txt
+recursive-exclude zatca *.pyc

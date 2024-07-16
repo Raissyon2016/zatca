@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-15 17:16:01.228564",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sn"
+ ],
+ "fields": [
+  {
+   "description": "1-EGS provider name |2-version |3-Serial number",
+   "fieldname": "sn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SN",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-15 17:25:39.450820",
+ "modified_by": "Administrator",
+ "module": "Zatca",
+ "name": "Zatca Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

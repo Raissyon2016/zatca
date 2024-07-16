@@ -1,0 +1,27 @@
+    <cac:InvoiceLine>
+        <cbc:ID>{item_id}</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">{qty}</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="{currency}">{total}</cbc:LineExtensionAmount>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="{currency}">{tax_amount}</cbc:TaxAmount>
+            <cbc:RoundingAmount currencyID="{currency}">{grand_total}</cbc:RoundingAmount>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>{item_name}</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>{tax_category}</cbc:ID>
+                <cbc:Percent>{tax_percentage}</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="{currency}">{rate}</cbc:PriceAmount>
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                <cbc:AllowanceChargeReason>discount</cbc:AllowanceChargeReason>
+                <cbc:Amount currencyID="{currency}">{discount}</cbc:Amount>
+            </cac:AllowanceCharge>
+        </cac:Price>
+    </cac:InvoiceLine>

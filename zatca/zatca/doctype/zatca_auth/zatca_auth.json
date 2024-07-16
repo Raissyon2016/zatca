@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Auth-.YYYY.-.#####",
+ "creation": "2023-11-09 17:22:17.017755",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_tab",
+  "disabled",
+  "customer",
+  "customer_name",
+  "address",
+  "email",
+  "phone",
+  "column_break_gjxu",
+  "posting_time",
+  "expiration",
+  "keys_tab",
+  "key",
+  "secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_tab",
+   "fieldtype": "Tab Break",
+   "label": "Customer"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_time",
+   "fieldtype": "Datetime",
+   "label": "Posting Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "keys_tab",
+   "fieldtype": "Tab Break",
+   "label": "Keys"
+  },
+  {
+   "fieldname": "key",
+   "fieldtype": "Data",
+   "label": "Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "secret",
+   "fieldtype": "Data",
+   "label": "Secret",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expiration",
+   "fieldtype": "Datetime",
+   "label": "Expiration"
+  },
+  {
+   "fieldname": "column_break_gjxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Zatca Log",
+   "link_fieldname": "zatca_client"
+  }
+ ],
+ "modified": "2023-11-20 10:50:55.697694",
+ "modified_by": "Administrator",
+ "module": "Zatca",
+ "name": "Zatca Auth",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
